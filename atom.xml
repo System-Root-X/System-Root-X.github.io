@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://system-root-x.github.io</id>
+    <title>System Root 的博客</title>
+    <updated>2023-02-03T17:35:02.229Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://system-root-x.github.io"/>
+    <link rel="self" href="https://system-root-x.github.io/atom.xml"/>
+    <subtitle>System Root 的没趣博客。不过，还是很高兴你能来看看。</subtitle>
+    <logo>https://system-root-x.github.io/images/avatar.png</logo>
+    <icon>https://system-root-x.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, System Root 的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[tampermonkey 自用美化样式分享]]></title>
+        <id>https://system-root-x.github.io/post/tampermonkey-zi-yong-mei-hua-yang-shi-fen-xiang/</id>
+        <link href="https://system-root-x.github.io/post/tampermonkey-zi-yong-mei-hua-yang-shi-fen-xiang/">
+        </link>
+        <updated>2023-02-03T17:08:05.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我在小众软件论坛获得了当月最佳新用户奖]]></title>
+        <id>https://system-root-x.github.io/post/wo-zai-xiao-zhong-ruan-jian-huo-de-liao-dang-yue-zui-jia-xin-yong-hu/</id>
+        <link href="https://system-root-x.github.io/post/wo-zai-xiao-zhong-ruan-jian-huo-de-liao-dang-yue-zui-jia-xin-yong-hu/">
+        </link>
+        <updated>2023-01-31T22:26:33.000Z</updated>
+    </entry>
+</feed>
