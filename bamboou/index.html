@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>竹u搜索</title>
+	</head>
+	<body>
+		<style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f7f7f7;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+input {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: 0;
+    outline: 0;
+}
+.sea, .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 71.6px;
+}
+
+.sea {
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-right: 30px;
+    background: #ffffff98;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+	position: relative;
+}
+.sea_input {
+    border-radius: 4px;
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 45px;
+    font-size: 14px;
+}
+.sea_input:focus-visible {
+    background: #fff;
+}
+.sea_icon {
+    background-image: url(svg/search.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+.box .left, .box .right {
+    position: relative;
+	width: 50%;
+}
+
+.box .left {
+
+}
+
+.box .right {
+    background-color: #ffffff98;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.loader {
+    position: absolute;
+    top: calc( 50% - 32.2px);
+    left: calc( 50% - 32.2px);
+}
+
+.loader .ball-clip-rotate > div {
+  background-color: #ffffff00;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  border: 2px solid #0078d7;
+  border-bottom-color: transparent;
+  height: 25px;
+  width: 25px;
+  background: transparent !important;
+  display: inline-block;
+  -webkit-animation: rotate 0.75s 0s linear infinite;
+  animation: rotate 0.75s 0s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1); }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6); }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1); } }
+		</style>
+		<div class="sea">
+			<span class="sea_icon"></span>
+			<input class="sea_input" type="text" placeholder="在此键入以搜索" value="" oninput="sea_text();">
+		</div>
+		<div class="box">
+			<div class="left">
+				<div class="loader">
+					<div class="loader-inner ball-clip-rotate">
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="loader">
+					<div class="loader-inner ball-clip-rotate">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var sea_input = document.getElementsByClassName("sea_input")[0];
+			var left = document.getElementsByClassName("left")[0];
+			var right = document.getElementsByClassName("right")[0];
+			
+			function sea_text() {
+				sea_va = sea_input.value;
+				
+				if(sea_va.length == 0) {} else {
+				left.innerHTML = "搜索不到 " + sea_va + "";
+				}
+			}
+		</script>
+	</body>
+</html>
